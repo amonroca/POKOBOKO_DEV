@@ -25,11 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(place_empty(x,y+3)){
-    gravitational();
+            <string>if place_empty(x,y+1){
+   gravitational();
     }
 else{
-    vspeed = 0;
+     vspeed = 0;
     }
 
 if(keyboard_check_pressed(RIGHT)){
@@ -47,7 +47,7 @@ if(keyboard_check_released(LEFT)){
     moveBack(obj_player,0);
     }
 
-if(keyboard_check_pressed(UP)){
+if(keyboard_check_pressed(UP)and not place_free(x,y+1)){
     jump(obj_player,12);
     } 
 </string>
