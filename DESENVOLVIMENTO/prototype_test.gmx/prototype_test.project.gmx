@@ -3,58 +3,64 @@
   <Configs name="configs">
     <Config>Configs\Default</Config>
   </Configs>
-  <datafiles number="1" name="datafiles">
-    <datafile>
-      <name>Red_e_a_forca_da_amizade.wmv</name>
-      <exists>-1</exists>
-      <size>17270068</size>
-      <exportAction>2</exportAction>
-      <exportDir></exportDir>
-      <overwrite>0</overwrite>
-      <freeData>-1</freeData>
-      <removeEnd>0</removeEnd>
-      <store>0</store>
-      <ConfigOptions>
-        <Config name="Default">
-          <CopyToMask>9223372036854775807</CopyToMask>
-        </Config>
-      </ConfigOptions>
-      <filename></filename>
-    </datafile>
-  </datafiles>
-  <NewExtensions/>
+  <datafiles number="2" name="datafiles"/>
+  <NewExtensions>
+    <extension index="0">extensions\SVP</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
-    <sprite>sprites\spr_block</sprite>
-    <sprite>sprites\spr_135</sprite>
-    <sprite>sprites\spr_315</sprite>
-    <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_red_walk</sprite>
+    <sprite>sprites\spr_red_jump</sprite>
+    <sprite>sprites\spr_red_roll</sprite>
+    <sprite>sprites\spr_red_stop</sprite>
+    <sprite>sprites\spr_01_lvl_01</sprite>
+    <sprite>sprites\spr_02_lvl_01</sprite>
+    <sprite>sprites\spr_03_lvl_01</sprite>
+    <sprite>sprites\spr_04_lvl_01</sprite>
+    <sprite>sprites\spr_buff_stop</sprite>
+    <sprite>sprites\spr_buff_strong</sprite>
+    <sprite>sprites\spr_jhau_charm</sprite>
+    <sprite>sprites\spr_jhau_stop</sprite>
+    <sprite>sprites\spr_pink_stop</sprite>
+    <sprite>sprites\spr_pink_walk</sprite>
+    <sprite>sprites\spr_skinny_stop</sprite>
+    <sprite>sprites\spr_skinny_walk</sprite>
+    <sprite>sprites\spr_wiseone_stop</sprite>
+    <sprite>sprites\spr_wiseone_walk</sprite>
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\bg_ground</background>
+    <background>background\bg_cloud</background>
+    <background>background\bg_sea</background>
+    <background>background\bg_sky</background>
+  </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
-    <script>scripts\scriptTest.gml</script>
     <scripts name="classMath()">
       <script>scripts\rc4.gml</script>
       <script>scripts\gravitational.gml</script>
     </scripts>
     <scripts name="classMove()">
-      <script>scripts\moveAhead.gml</script>
-      <script>scripts\moveBack.gml</script>
+      <script>scripts\move.gml</script>
       <script>scripts\jump.gml</script>
-      <script>scripts\move_135.gml</script>
     </scripts>
+    <script>scripts\spr_red_change.gml</script>
+    <script>scripts\spr_flip.gml</script>
+    <script>scripts\draw_npc.gml</script>
   </scripts>
   <objects name="objects">
     <object>objects\obj_block</object>
-    <object>objects\obj_135</object>
-    <object>objects\obj_315</object>
-    <object>objects\obj_player</object>
+    <object>objects\obj_npc</object>
+    <object>objects\obj_red</object>
+    <object>objects\obj_draw</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_room</room>
   </rooms>
-  <constants number="5">
+  <constants number="8">
+    <constant name="SURFACE_Y">130</constant>
+    <constant name="SURFACE_X">110</constant>
+    <constant name="VELOCITY">6</constant>
     <constant name="MAX_SPEED">12</constant>
     <constant name="RIGHT">vk_right</constant>
     <constant name="LEFT">vk_left</constant>
