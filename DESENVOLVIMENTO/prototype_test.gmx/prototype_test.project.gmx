@@ -27,6 +27,8 @@
     <sprite>sprites\spr_skinny_walk</sprite>
     <sprite>sprites\spr_wiseone_stop</sprite>
     <sprite>sprites\spr_wiseone_walk</sprite>
+    <sprite>sprites\spr_mouse_ptr</sprite>
+    <sprite>sprites\spr_jhau_talk</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_ground</background>
@@ -53,6 +55,7 @@
     <object>objects\obj_npc</object>
     <object>objects\obj_red</object>
     <object>objects\obj_draw</object>
+    <object>objects\obj_dialog</object>
   </objects>
   <rooms name="rooms">
     <room>rooms\main_room</room>

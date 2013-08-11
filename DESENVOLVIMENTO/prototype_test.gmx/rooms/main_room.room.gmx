@@ -36,19 +36,11 @@ with(col_mask_03){
    image_index = 0;
    image_speed = 0;
    }
+   
 instance_create(x,y,obj_draw);
-/*wiseone = instance_create(320,608,obj_npc);
-with(wiseone){
-    sprite_index = spr_wiseone_stop;
-    image_speed = 0.3;
-    image_xscale = -1;
-    }
-jhau = instance_create(448,768,obj_npc);
-with(jhau){
-    sprite_index = spr_jhau_stop;
-    image_speed = 0.5;
-    image_xscale = -1;
-    }*/</code>
+
+cursor_sprite = -1;
+window_set_cursor(cr_none);</code>
   <enableViews>-1</enableViews>
   <clearViewBackground>-1</clearViewBackground>
   <makerSettings>
