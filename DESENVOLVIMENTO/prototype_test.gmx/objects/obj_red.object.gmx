@@ -57,9 +57,8 @@ image_speed = 0.6;
    cursor_sprite = spr_mouse_ptr;
    global.enble = false;
    global.dialog = 340;
-   if not object_exists(obj_dialog){
-      show_message("Entrou");
-      instance_create(200,600,obj_dialog)
+   if not instance_exists(obj_dialog){
+      instance_create(200,600,obj_dialog);
       }
    }
 </string>
