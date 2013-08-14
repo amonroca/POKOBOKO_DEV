@@ -29,6 +29,8 @@
     <sprite>sprites\spr_wiseone_walk</sprite>
     <sprite>sprites\spr_mouse_ptr</sprite>
     <sprite>sprites\spr_jhau_talk</sprite>
+    <sprite>sprites\spr_mask</sprite>
+    <sprite>sprites\spr_skinny_talk</sprite>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_ground</background>

@@ -53,14 +53,37 @@ image_speed = 0.6;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if obj_red.x == 340{
-   cursor_sprite = spr_mouse_ptr;
-   global.enble = false;
-   global.dialog = 340;
-   if not instance_exists(obj_dialog){
-      instance_create(200,600,obj_dialog);
+            <string>if global.talk != "jhau"{   
+   if x == (global.jhau.x-100){
+      cursor_sprite = spr_mouse_ptr;
+      if not instance_exists(obj_dialog){
+         var dialog = instance_create(view_wview[0]/2,view_hview[0],obj_dialog);
+         with(dialog){
+             sprite_index = spr_jhau_talk;
+             image_index = 0;
+             image_speed = 0;
+          }
       }
+   instance_deactivate_object(obj_npc);
+   instance_deactivate_object(obj_red);
    }
+}
+if global.talk != "skinny"{
+    if x == (global.skinny.x-50){
+    show_message(global.skinny.x);
+       cursor_sprite = spr_mouse_ptr;
+       if not instance_exists(obj_dialog){
+         var dialog = instance_create(view_wview[0]/2,view_hview[0],obj_dialog);
+         with(dialog){
+             sprite_index = spr_skinny_talk;
+             image_index = 0;
+             image_speed = 0;
+          }
+      }
+   instance_deactivate_object(obj_npc);
+   instance_deactivate_object(obj_red);
+   }
+}
 </string>
           </argument>
         </arguments>
@@ -85,8 +108,6 @@ image_speed = 0.6;
             <kind>1</kind>
             <string>gravitational();
 
-if global.enable == true{
-
 if not place_free(x,y+1)
    global.jumping = false;
     
@@ -105,7 +126,6 @@ else if(keyboard_check(LEFT)){
        }
     }
 else
-    //move(obj_red,0);
     hspeed = 0;
     
 if(keyboard_check_pressed(UP)and not place_empty(x,y+1)){
@@ -118,35 +138,9 @@ else if(keyboard_check_pressed(DOWN)){
 else if(keyboard_check_released(DOWN)){
      global.rolling = false;
      }
-     
-}
        
 spr_red_change();
 spr_flip(obj_red);
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="4" ename="obj_npc">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>move_contact_solid(direction,MAX_SPEED);
-vspeed = 0;
 </string>
           </argument>
         </arguments>

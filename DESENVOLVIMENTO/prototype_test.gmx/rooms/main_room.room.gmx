@@ -10,7 +10,8 @@
   <persistent>0</persistent>
   <colour>12632256</colour>
   <showcolour>-1</showcolour>
-  <code>var col_mask_00, col_mask_01, col_mask_02, col_mask_03, wiseone, jhau;
+  <code>var col_mask_00, col_mask_01, col_mask_02, col_mask_03;
+global.talk = "null";
 
 col_mask_00 = instance_create(0,1024,obj_block);
 with(col_mask_00){
@@ -36,8 +37,27 @@ with(col_mask_03){
    image_index = 0;
    image_speed = 0;
    }
-   
-instance_create(x,y,obj_draw);
+global.wiseone = instance_create(288,678,obj_npc);
+with(global.wiseone){
+   sprite_index = spr_wiseone_stop;
+   image_index = 0;
+   image_speed = 0.3;
+   image_xscale = -1;
+   }
+global.jhau = instance_create(416,798,obj_npc);
+with(global.jhau){
+   sprite_index = spr_jhau_stop;
+   image_index = 0;
+   image_speed = 0.3;
+   image_xscale = -1;
+   }
+global.skinny = instance_create(736,788,obj_npc);
+with(global.skinny){
+   sprite_index = spr_skinny_stop;
+   image_index = 0;
+   image_speed = 0.3;
+   image_xscale = -1;
+   }
 
 cursor_sprite = -1;
 window_set_cursor(cr_none);</code>

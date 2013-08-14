@@ -19,12 +19,12 @@
   <width>744</width>
   <height>369</height>
   <frames>
-    <frame index="0">images\spr_jhau_talk_0.png</frame>
-    <frame index="1">images\spr_jhau_talk_1.png</frame>
-    <frame index="2">images\spr_jhau_talk_2.png</frame>
-    <frame index="3">images\spr_jhau_talk_3.png</frame>
-    <frame index="4">images\spr_jhau_talk_4.png</frame>
-    <frame index="5">images\spr_jhau_talk_5.png</frame>
-    <frame index="6">images\spr_jhau_talk_6.png</frame>
+    <frame index="0">images\spr_skinny_talk_0.png</frame>
+    <frame index="1">images\spr_skinny_talk_1.png</frame>
+    <frame index="2">images\spr_skinny_talk_2.png</frame>
+    <frame index="3">images\spr_skinny_talk_3.png</frame>
+    <frame index="4">images\spr_skinny_talk_4.png</frame>
+    <frame index="5">images\spr_skinny_talk_5.png</frame>
+    <frame index="6">images\spr_skinny_talk_6.png</frame>
   </frames>
 </sprite>
